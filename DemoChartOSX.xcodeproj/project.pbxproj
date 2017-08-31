@@ -23,6 +23,7 @@
 		C3AE37CC1F4C7E80003AD9C4 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE37CB1F4C7E80003AD9C4 /* MainWindowController.swift */; };
 		C3AE37CD1F4C7F70003AD9C4 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3AE37C91F4C7D40003AD9C4 /* MainWindowController.xib */; };
 		C3B791191F51BA5A0051C1D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C3B791171F51BA5A0051C1D4 /* README.md */; };
+		C3B89B161F588B140048C7EA /* MapForItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B89B151F588B140048C7EA /* MapForItinerary.swift */; };
 		C3FB45541F4F2C6F002A291C /* SourceCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB45531F4F2C6F002A291C /* SourceCollectionController.swift */; };
 		C3FC558D1F4C8AE70090991B /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC558A1F4C8AE70090991B /* Feed.swift */; };
 		C3FC558E1F4C8AE70090991B /* SourceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FC558B1F4C8AE70090991B /* SourceListViewController.swift */; };
@@ -188,6 +189,7 @@
 		C3AE37C91F4C7D40003AD9C4 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		C3AE37CB1F4C7E80003AD9C4 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		C3B791171F51BA5A0051C1D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C3B89B151F588B140048C7EA /* MapForItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapForItinerary.swift; sourceTree = "<group>"; };
 		C3FB45531F4F2C6F002A291C /* SourceCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceCollectionController.swift; sourceTree = "<group>"; };
 		C3FC55881F4C8AE70090991B /* Feeds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Feeds.plist; sourceTree = "<group>"; };
 		C3FC55891F4C8AE70090991B /* SourceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceListViewController.xib; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				C3FC56211F4CA2260090991B /* Toggle */,
 				C32896481F5181B2000A7E51 /* CustomChart.swift */,
 				C32896491F5181B2000A7E51 /* CustomChart.xib */,
+				C3B89B151F588B140048C7EA /* MapForItinerary.swift */,
 			);
 			path = DemoChartOSX;
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				C3FC55AE1F4C8B800090991B /* DateValueFormatter.swift in Sources */,
 				C3FC558E1F4C8AE70090991B /* SourceListViewController.swift in Sources */,
 				C3FC55B21F4C8B800090991B /* HourValueFormatter.swift in Sources */,
+				C3B89B161F588B140048C7EA /* MapForItinerary.swift in Sources */,
 				C3FC55F91F4C8C0D0090991B /* HalfPieChartViewController.swift in Sources */,
 				C3FC55FB1F4C8C0D0090991B /* BarChartViewControllerColumnWithDrilldown.swift in Sources */,
 				C3FC55AB1F4C8B800090991B /* XYMarkerView.swift in Sources */,
