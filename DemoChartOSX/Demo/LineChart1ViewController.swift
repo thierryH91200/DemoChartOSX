@@ -199,13 +199,6 @@ open class LineChart1ViewController: DemoBaseViewController
     }
 }
 
-extension NSView {
-    func backgroundColorP(color: NSColor) {
-        wantsLayer = true
-        layer?.backgroundColor = color.cgColor
-    }
-}
-
 extension CAGradientLayer {
     
     func turquoiseColor() -> CAGradientLayer {

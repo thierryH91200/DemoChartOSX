@@ -27,9 +27,6 @@ open class BarChartViewController: DemoBaseViewController, ChartViewDelegate
     {
         super.viewDidAppear()
         view.window!.title = "Bar Chart"
-        mytitle = "Candlestick Plot"
-        //mysection = "Candlestick"
-        //super.registerPlotItem(self)
     }
     
     override open func viewDidLoad() {
@@ -47,6 +44,7 @@ open class BarChartViewController: DemoBaseViewController, ChartViewDelegate
         chartView.drawGridBackgroundEnabled = true
         chartView.fitBars                   = true
         chartView.drawValueAboveBarEnabled = true
+
         chartView.drawBordersEnabled = true
         
         // MARK: xAxis
@@ -64,7 +62,7 @@ open class BarChartViewController: DemoBaseViewController, ChartViewDelegate
         let leftAxis                  = chartView.leftAxis
         leftAxis.drawGridLinesEnabled = true
         leftAxis.drawZeroLineEnabled  = false
-        leftAxis.valueFormatter       = HourValueFormatter()
+//        leftAxis.valueFormatter       = HourValueFormatter()
         
 //        leftAxis.nameAxis = "Hour (s)"
 //        leftAxis.nameAxisEnabled = true
@@ -117,6 +115,7 @@ open class BarChartViewController: DemoBaseViewController, ChartViewDelegate
             set1.colors = [.orange, .orange, .orange, .orange, .orange, .orange, .orange]
             set1.drawValuesEnabled = false
             set1.stackLabels = ["Births"]
+            set1.valueFont = NSUIFont.systemFont(ofSize: 16.0)
             
             var dataSets = [ChartDataSet]()
             

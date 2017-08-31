@@ -1,4 +1,11 @@
 # DemoChartOSX1
+
+## Version
+
+1.0
+
+## About Demo Chart OSX
+
 Demo Chart OSX
 
 

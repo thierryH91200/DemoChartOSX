@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30A49A41F52E9EE0019F1C0 /* AAPLCircularLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A49A21F52E9EE0019F1C0 /* AAPLCircularLayout.swift */; };
+		C30A49A61F52EBFB0019F1C0 /* AAPLSlideLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A49A51F52EBFB0019F1C0 /* AAPLSlideLayout.swift */; };
 		C328964A1F5181B2000A7E51 /* CustomChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32896481F5181B2000A7E51 /* CustomChart.swift */; };
 		C328964B1F5181B2000A7E51 /* CustomChart.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32896491F5181B2000A7E51 /* CustomChart.xib */; };
 		C34661C01F506D0200E5FB3F /* LineChartRealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34661BE1F506D0200E5FB3F /* LineChartRealTimeViewController.swift */; };
@@ -164,6 +166,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C30A49A21F52E9EE0019F1C0 /* AAPLCircularLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAPLCircularLayout.swift; sourceTree = "<group>"; };
+		C30A49A51F52EBFB0019F1C0 /* AAPLSlideLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAPLSlideLayout.swift; sourceTree = "<group>"; };
 		C32896481F5181B2000A7E51 /* CustomChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChart.swift; sourceTree = "<group>"; };
 		C32896491F5181B2000A7E51 /* CustomChart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomChart.xib; sourceTree = "<group>"; };
 		C34661BE1F506D0200E5FB3F /* LineChartRealTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartRealTimeViewController.swift; sourceTree = "<group>"; };
@@ -476,15 +480,15 @@
 				C3FC56091F4CA2190090991B /* ToggleCandleStickViewController.swift */,
 				C3FC56131F4CA21B0090991B /* ToggleCandleStickViewController.xib */,
 				C3FC560F1F4CA21B0090991B /* ToggleCombinedViewController.swift */,
-				C3FC560E1F4CA21A0090991B /* ToggleRadarViewController.swift */,
-				C3FC56171F4CA21C0090991B /* ToggleRadarViewController.xib */,
-				C3FC56121F4CA21B0090991B /* ToggleScatterViewController.swift */,
-				C3FC560C1F4CA21A0090991B /* ToggleScatterViewController.xib */,
 				C3FC56141F4CA21C0090991B /* ToggleCombinedViewController.xib */,
 				C3FC56181F4CA21C0090991B /* ToggleLineViewController.swift */,
 				C3FC560D1F4CA21A0090991B /* ToggleLineViewController.xib */,
 				C3FC56101F4CA21B0090991B /* TogglePieViewController.swift */,
 				C3FC56161F4CA21C0090991B /* TogglePieViewController.xib */,
+				C3FC560E1F4CA21A0090991B /* ToggleRadarViewController.swift */,
+				C3FC56171F4CA21C0090991B /* ToggleRadarViewController.xib */,
+				C3FC56121F4CA21B0090991B /* ToggleScatterViewController.swift */,
+				C3FC560C1F4CA21A0090991B /* ToggleScatterViewController.xib */,
 			);
 			path = Toggle;
 			sourceTree = "<group>";
@@ -492,6 +496,8 @@
 		C3FC562A1F4CA2F40090991B /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				C30A49A51F52EBFB0019F1C0 /* AAPLSlideLayout.swift */,
+				C30A49A21F52E9EE0019F1C0 /* AAPLCircularLayout.swift */,
 				C3FC56231F4CA2ED0090991B /* CollectionViewItem.swift */,
 				C3FC56271F4CA2EE0090991B /* CollectionViewItem.xib */,
 				C3FC56251F4CA2ED0090991B /* HeaderView.swift */,
@@ -722,6 +728,7 @@
 				C3FC55F51F4C8C0D0090991B /* LineChart1ViewController.swift in Sources */,
 				C3FC55F21F4C8C0D0090991B /* RadarChartViewController.swift in Sources */,
 				C3FC55E91F4C8C0D0090991B /* PositiveNegativeBarChartViewController.swift in Sources */,
+				C30A49A41F52E9EE0019F1C0 /* AAPLCircularLayout.swift in Sources */,
 				C3FC561F1F4CA21D0090991B /* ToggleScatterViewController.swift in Sources */,
 				C3FC561D1F4CA21D0090991B /* TogglePieViewController.swift in Sources */,
 				C3AE37CC1F4C7E80003AD9C4 /* MainWindowController.swift in Sources */,
@@ -744,6 +751,7 @@
 				C3FC558D1F4C8AE70090991B /* Feed.swift in Sources */,
 				C34661C01F506D0200E5FB3F /* LineChartRealTimeViewController.swift in Sources */,
 				C3FC55AD1F4C8B800090991B /* LargeValueFormatter.swift in Sources */,
+				C30A49A61F52EBFB0019F1C0 /* AAPLSlideLayout.swift in Sources */,
 				C3FC55F11F4C8C0D0090991B /* SinusBarChartViewController.swift in Sources */,
 				C3FC558F1F4C8AE70090991B /* FeedItem.swift in Sources */,
 				C3FC55931F4C8B290090991B /* AlbumArtViewController.swift in Sources */,

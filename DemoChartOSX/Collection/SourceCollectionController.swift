@@ -51,8 +51,24 @@ class SourceCollectionController: NSViewController {
     }
     
     fileprivate func configureCollectionView() {
+//        var layout: NSCollectionViewLayout? = nil
+//        layout = AAPLCircularLayout()
+//        if let layout = layout {
+//            if NSAnimationContext.current().duration > 0.0 {
+//                NSAnimationContext.current().duration = 0.5
+//                collectionView.animator().collectionViewLayout = layout
+//            } else {
+//                collectionView.collectionViewLayout = layout
+//            }
+//        }
+//        collectionView.collectionViewLayout = layout
+//        
+//        view.wantsLayer = true
+//        collectionView.layer?.backgroundColor = NSColor.black.cgColor
+//        return
+        
         let flowLayout = NSCollectionViewFlowLayout()
-        flowLayout.itemSize = NSSize(width: 140.0, height: 120.0)
+        flowLayout.itemSize = NSSize(width: 100.0, height: 100.0)
         flowLayout.sectionInset = EdgeInsets(top: 30.0, left: 20.0, bottom: 30.0, right: 20.0)
         flowLayout.minimumInteritemSpacing = 5.0
         flowLayout.minimumLineSpacing = 5.0

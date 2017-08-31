@@ -27,19 +27,19 @@ open class DemoBaseViewController: NSViewController
     
     func handleOption(_ option: String, forChartView chartView: ChartViewBase) {
         switch option {
-        case "Toggle Values":
+        case "Values":
             for set in chartView.data!.dataSets {
                 set.drawValuesEnabled = !set.drawValuesEnabled
             }
             chartView.needsDisplay = true
             
-        case "Toggle Icons":
+        case "Icons":
             for set in chartView.data!.dataSets {
                 set.drawIconsEnabled = !set.drawIconsEnabled
             }
             chartView.needsDisplay = true
             
-        case "Toggle Highlight":
+        case "Highlight":
             chartView.data!.highlightEnabled = !chartView.data!.isHighlightEnabled
             chartView.needsDisplay = true
             
@@ -57,17 +57,17 @@ open class DemoBaseViewController: NSViewController
             myAlert.messageText = "Save To Gallery not implemented on macOS."
             myAlert.runModal()
             
-        case "Toggle PinchZoom":
+        case "PinchZoom":
             let barLineChart = chartView as! BarLineChartViewBase
             barLineChart.pinchZoomEnabled = !barLineChart.pinchZoomEnabled
             chartView.needsDisplay = true
             
-        case "Toggle auto scale min/max":
+        case "Auto scale min/max":
             let barLineChart = chartView as! BarLineChartViewBase
             barLineChart.autoScaleMinMaxEnabled = !barLineChart.isAutoScaleMinMaxEnabled
             chartView.notifyDataSetChanged()
             
-        case "Toggle Data":
+        case "Data":
             shouldHideData = !shouldHideData
             updateChartData()
             
@@ -78,7 +78,9 @@ open class DemoBaseViewController: NSViewController
                 }
             }
             chartView.needsDisplay = true
+            
         default:
+            fatalError("not implemented : (\(option)")
             break
         }
     }

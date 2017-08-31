@@ -72,8 +72,8 @@ class MainWindowController: NSWindowController , NSWindowDelegate {
     @IBOutlet weak var queueButton: NSButton!
     @IBOutlet weak var collectionButton: NSButton!
     
+    @IBOutlet weak var theBox: NSBox!
     @IBOutlet weak var stackZoom: NSStackView!
-    
     
     // all the sub controllers
     var barChartViewController                    = BarChartViewController()
@@ -137,6 +137,13 @@ class MainWindowController: NSWindowController , NSWindowDelegate {
         
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
         
+        
+                
+        self.window!.titleVisibility = NSWindowTitleVisibility.hidden
+        self.window!.titlebarAppearsTransparent = true
+        
+        makeBox()
+
         self.sourceCollectionController = SourceCollectionController()
         self.sourceCollectionController?.mainWindowController = self
         
@@ -146,6 +153,19 @@ class MainWindowController: NSWindowController , NSWindowDelegate {
         setUpSourceList()
         setUpAlbumArt()
     }
+    
+    func makeBox() {
+        //  self.window?.appearance = NSAppearance(named: NSAppearanceNameVibrantDark)
+        theBox.fillColor = NSColor(patternImage: NSImage(named: "Inverted Gradient")!)
+        theBox.contentView?.isHidden = false
+        theBox.boxType = .custom
+        theBox.borderType = .bezelBorder
+        theBox.borderWidth = 1.1
+        theBox.cornerRadius = 3
+        theBox.fillColor = NSColor(patternImage: NSImage(named: "Gradient")!)
+        
+    }
+
     
     func changeView(name: String)
     {
